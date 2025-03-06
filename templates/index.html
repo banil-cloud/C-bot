@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confluence Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>How can I help you?</h1>
+        <p>Please check by clicking on <a href="#" id="faq-link"><strong>Frequently Asked Questions</strong></a> before asking.</p>
+        <div id="faq-box" style="display: none;"></div>
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type a question..." />
+        <button id="send-btn">Send</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
